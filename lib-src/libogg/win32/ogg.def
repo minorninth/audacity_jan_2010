@@ -1,4 +1,4 @@
-; $Id: ogg.def,v 1.4 2001/10/23 13:26:41 cwolf Exp $
+; $Id: ogg.def,v 1.7 2002/07/04 09:14:43 msmith Exp $
 ;
 ; ogg.def
 ;
@@ -24,6 +24,7 @@ ogg_stream_packetpeek
 ogg_stream_pagein
 ogg_stream_pageout
 ogg_stream_reset
+ogg_stream_reset_serialno
 ogg_sync_buffer
 ogg_sync_clear
 ogg_sync_destroy
@@ -34,17 +35,16 @@ ogg_sync_reset
 ogg_sync_wrote
 oggpack_adv
 oggpack_adv1
-oggpack_adv_huff
 oggpack_bits
 oggpack_bytes
 oggpack_get_buffer
 oggpack_look
 oggpack_look1
-oggpack_look_huff
 oggpack_read
 oggpack_read1
 oggpack_readinit
 oggpack_reset
 oggpack_write
+oggpack_writealign
 oggpack_writeclear
 oggpack_writeinit
