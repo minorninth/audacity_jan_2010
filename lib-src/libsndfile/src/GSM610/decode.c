@@ -4,11 +4,11 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-/* $Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/decode.c,v 1.1 1992/10/28 00:15:50 jutta Exp $ */
+/* $Header: /cvsroot/audacity/lib-src/libsndfile/src/GSM610/decode.c,v 1.1.1.1 2001/10/15 04:39:14 dmazzoni Exp $ */
 
 #include <stdio.h>
 
-#include	"private.h"
+#include	"gsmprivate.h"
 #include	"gsm.h"
 #include	"proto.h"
 

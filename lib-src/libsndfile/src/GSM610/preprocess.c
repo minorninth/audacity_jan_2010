@@ -4,12 +4,12 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-/* $Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/preprocess.c,v 1.2 1994/05/10 20:18:45 jutta Exp $ */
+/* $Header: /cvsroot/audacity/lib-src/libsndfile/src/GSM610/preprocess.c,v 1.1.1.1 2001/10/15 04:39:18 dmazzoni Exp $ */
 
 #include	<stdio.h>
 #include	<assert.h>
 
-#include "private.h"
+#include "gsmprivate.h"
 
 #include	"gsm.h"
 #include 	"proto.h"

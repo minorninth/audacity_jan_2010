@@ -4,7 +4,7 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-/* $Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/add.c,v 1.6 1996/07/02 09:57:33 jutta Exp $ */
+/* $Header: /cvsroot/audacity/lib-src/libsndfile/src/GSM610/add.c,v 1.1.1.1 2001/10/15 04:39:14 dmazzoni Exp $ */
 
 /*
  *  See private.h for the more commonly used macro versions.
@@ -13,7 +13,7 @@
 #include	<stdio.h>
 #include	<assert.h>
 
-#include	"private.h"
+#include	"gsmprivate.h"
 #include	"gsm.h"
 #include	"proto.h"
 

@@ -4,7 +4,7 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-static char const	ident[] = "$Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/gsm_create.c,v 1.4 1996/07/02 09:59:05 jutta Exp $";
+static char const	ident[] = "$Header: /cvsroot/audacity/lib-src/libsndfile/src/GSM610/gsm_create.c,v 1.1.1.1 2001/10/15 04:39:19 dmazzoni Exp $";
 
 #include	"config.h"
 
@@ -28,7 +28,7 @@ static char const	ident[] = "$Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/R
 #include <stdio.h>
 
 #include "gsm.h"
-#include "private.h"
+#include "gsmprivate.h"
 #include "proto.h"
 
 gsm gsm_create P0()

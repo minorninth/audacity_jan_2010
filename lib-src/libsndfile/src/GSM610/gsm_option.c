@@ -4,9 +4,9 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-/* $Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/gsm_option.c,v 1.3 1996/07/02 09:59:05 jutta Exp $ */
+/* $Header: /cvsroot/audacity/lib-src/libsndfile/src/GSM610/gsm_option.c,v 1.1.1.1 2001/10/15 04:39:19 dmazzoni Exp $ */
 
-#include "private.h"
+#include "gsmprivate.h"
 
 #include "gsm.h"
 #include "proto.h"

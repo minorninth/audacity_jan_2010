@@ -4,12 +4,12 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-/* $Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/long_term.c,v 1.6 1996/07/02 12:33:19 jutta Exp $ */
+/* $Header: /cvsroot/audacity/lib-src/libsndfile/src/GSM610/long_term.c,v 1.1.1.1 2001/10/15 04:39:17 dmazzoni Exp $ */
 
 #include <stdio.h>
 #include <assert.h>
 
-#include "private.h"
+#include "gsmprivate.h"
 
 #include "gsm.h"
 #include "proto.h"

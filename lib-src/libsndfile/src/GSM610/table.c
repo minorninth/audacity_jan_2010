@@ -4,7 +4,7 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-/* $Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/table.c,v 1.1 1992/10/28 00:15:50 jutta Exp $ */
+/* $Header: /cvsroot/audacity/lib-src/libsndfile/src/GSM610/table.c,v 1.1.1.1 2001/10/15 04:39:20 dmazzoni Exp $ */
 
 /*  Most of these tables are inlined at their point of use.
  */
@@ -16,7 +16,7 @@
  */
 
 #define	GSM_TABLE_C
-#include "private.h"
+#include "gsmprivate.h"
 #include	"gsm.h"
 
 /*  Table 4.1  Quantization of the Log.-Area Ratios

@@ -4,12 +4,12 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-/* $Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/rpe.c,v 1.3 1994/05/10 20:18:46 jutta Exp $ */
+/* $Header: /cvsroot/audacity/lib-src/libsndfile/src/GSM610/rpe.c,v 1.1.1.1 2001/10/15 04:39:20 dmazzoni Exp $ */
 
 #include <stdio.h>
 #include <assert.h>
 
-#include "private.h"
+#include "gsmprivate.h"
 
 #include "gsm.h"
 #include "proto.h"
