@@ -1,4 +1,4 @@
-/* config.h.in.  Generated automatically from configure.in by autoheader 2.13.  */
+/* configunix.h.in.  Generated automatically from configure.in by autoheader 2.13.  */
 /*
  * libmad - MPEG audio decoder library
  * Copyright (C) 2000-2001 Robert Leslie
@@ -17,12 +17,8 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * $Id: config.h.in,v 1.5 2002/02/04 00:15:47 mbrubeck Exp $
+ * $Id: acconfig.h,v 1.2 2001/10/21 22:26:32 dmazzoni Exp $
  */
-
-#ifdef _WIN32
-#include "configwin32.h"
-#endif
 
 # ifndef LIBMAD_CONFIG_H
 # define LIBMAD_CONFIG_H
