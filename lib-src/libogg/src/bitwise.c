@@ -7,11 +7,11 @@
  *                                                                  *
  * THE OggVorbis SOURCE CODE IS (C) COPYRIGHT 1994-2001             *
  * by the XIPHOPHORUS Company http://www.xiph.org/                  *
-
+ *                                                                  *
  ********************************************************************
 
   function: packing variable sized words into an octet stream
-  last mod: $Id: bitwise.c,v 1.7 2001/03/28 11:45:33 segher Exp $
+  last mod: $Id: bitwise.c,v 1.10 2001/12/21 14:41:15 segher Exp $
 
  ********************************************************************/
 
@@ -34,7 +34,7 @@ static unsigned long mask[]=
  0x3fffffff,0x7fffffff,0xffffffff };
 
 void oggpack_writeinit(oggpack_buffer *b){
-  memset(b,0,sizeof(oggpack_buffer));
+  memset(b,0,sizeof(*b));
   b->ptr=b->buffer=_ogg_malloc(BUFFER_INCREMENT);
   b->buffer[0]='\0';
   b->storage=BUFFER_INCREMENT;
@@ -48,11 +48,11 @@ void oggpack_reset(oggpack_buffer *b){
 
 void oggpack_writeclear(oggpack_buffer *b){
   _ogg_free(b->buffer);
-  memset(b,0,sizeof(oggpack_buffer));
+  memset(b,0,sizeof(*b));
 }
 
 void oggpack_readinit(oggpack_buffer *b,unsigned char *buf,int bytes){
-  memset(b,0,sizeof(oggpack_buffer));
+  memset(b,0,sizeof(*b));
   b->buffer=b->ptr=buf;
   b->storage=bytes;
 }
@@ -172,7 +172,7 @@ long oggpack_read(oggpack_buffer *b,int bits){
 
   if(b->endbyte+4>=b->storage){
     /* not the main path */
-    ret=-1;
+    ret=-1UL;
     if(b->endbyte+(bits-1)/8>=b->storage)goto overflow;
   }
   
@@ -204,7 +204,7 @@ long oggpack_read1(oggpack_buffer *b){
   
   if(b->endbyte>=b->storage){
     /* not the main path */
-    ret=-1;
+    ret=-1UL;
     goto overflow;
   }
 

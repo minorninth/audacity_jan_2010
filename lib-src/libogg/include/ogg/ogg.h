@@ -7,11 +7,11 @@
  *                                                                  *
  * THE OggVorbis SOURCE CODE IS (C) COPYRIGHT 1994-2001             *
  * by the XIPHOPHORUS Company http://www.xiph.org/                  *
-
+ *                                                                  *
  ********************************************************************
 
  function: toplevel libogg include
- last mod: $Id: ogg.h,v 1.11 2001/05/24 01:04:36 xiphmont Exp $
+ last mod: $Id: ogg.h,v 1.13 2001/12/20 00:58:44 segher Exp $
 
  ********************************************************************/
 #ifndef _OGG_H
@@ -154,6 +154,8 @@ extern int      ogg_stream_clear(ogg_stream_state *os);
 extern int      ogg_stream_reset(ogg_stream_state *os);
 extern int      ogg_stream_destroy(ogg_stream_state *os);
 extern int      ogg_stream_eos(ogg_stream_state *os);
+
+extern void     ogg_page_checksum_set(ogg_page *og);
 
 extern int      ogg_page_version(ogg_page *og);
 extern int      ogg_page_continued(ogg_page *og);
