@@ -1,5 +1,5 @@
 /*
- * $Id: debug_multi_out.c,v 1.3 2002/03/21 00:58:45 philburk Exp $
+ * $Id: debug_multi_out.c,v 1.1.1.1 2004/04/22 04:08:24 mbrubeck Exp $
  * debug_multi_out.c
  * Play a different sine wave on each channels,
  * using the Portable Audio api.

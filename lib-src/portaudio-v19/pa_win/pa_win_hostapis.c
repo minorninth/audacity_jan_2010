@@ -1,5 +1,5 @@
 /*
- * $Id: pa_win_hostapis.c,v 1.1.2.9 2003/09/15 18:30:26 rossbencina Exp $
+ * $Id: pa_win_hostapis.c,v 1.1.1.1 2004/04/22 04:08:31 mbrubeck Exp $
  * Portable Audio I/O Library Windows initialization table
  *
  * Based on the Open Source API proposed by Ross Bencina

@@ -1,5 +1,5 @@
 /*
- * $Id: pa_mac_core.c,v 1.8 2002/04/12 18:07:20 philburk Exp $
+ * $Id: pa_mac_core.c,v 1.1.1.1 2004/04/22 04:08:22 mbrubeck Exp $
  * pa_mac_core.c
  * Implementation of PortAudio for Mac OS X Core Audio
  *

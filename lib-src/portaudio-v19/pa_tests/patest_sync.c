@@ -15,7 +15,7 @@
 	@author Phil Burk  http://www.softsynth.com
 */
 /*
- * $Id: patest_sync.c,v 1.1.1.1.2.5 2003/09/02 04:17:37 rossbencina Exp $
+ * $Id: patest_sync.c,v 1.1.1.1 2004/04/22 04:08:25 mbrubeck Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.portaudio.com

@@ -1,5 +1,5 @@
 /*
- * $Id: debug_multi_in.c,v 1.1.1.1 2002/01/22 00:52:28 phil Exp $
+ * $Id: debug_multi_in.c,v 1.1.1.1 2004/04/22 04:08:24 mbrubeck Exp $
  * debug_multi_in.c
  * Pass output from each of multiple channels
  * to a stereo output using the Portable Audio api.

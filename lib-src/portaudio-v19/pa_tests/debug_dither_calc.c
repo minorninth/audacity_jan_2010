@@ -1,5 +1,5 @@
 /*
- * $Id: debug_dither_calc.c,v 1.1 2002/03/21 00:44:35 philburk Exp $
+ * $Id: debug_dither_calc.c,v 1.1.1.1 2004/04/22 04:08:24 mbrubeck Exp $
  * Test Dither calculations.
  *
  * Author: Phil Burk  http://www.softsynth.com

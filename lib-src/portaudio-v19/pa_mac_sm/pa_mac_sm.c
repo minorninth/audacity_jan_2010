@@ -1,5 +1,5 @@
 /*
- * $Id: pa_mac_sm.c,v 1.1.2.1 2002/06/07 21:20:48 rossb Exp $
+ * $Id: pa_mac_sm.c,v 1.1.1.1 2004/04/22 04:08:30 mbrubeck Exp $
  * Portable Audio I/O Library for Macintosh
  *
  * Based on the Open Source API proposed by Ross Bencina
