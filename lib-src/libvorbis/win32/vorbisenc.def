@@ -1,5 +1,5 @@
 ;
-; $Id: vorbisenc.def,v 1.4 2002/10/31 07:00:49 dmazzoni Exp $
+; $Id: vorbisenc.def,v 1.1.1.4 2004/11/13 16:55:05 mbrubeck Exp $
 ;
 LIBRARY
 

@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: basic shared codebook operations
- last mod: $Id: sharedbook.c,v 1.1.1.3 2002/10/26 19:39:35 dmazzoni Exp $
+ last mod: $Id: sharedbook.c,v 1.1.1.5 2004/11/13 16:54:51 mbrubeck Exp $
 
  ********************************************************************/
 
