@@ -3,7 +3,7 @@
 	@author Phil Burk  http://www.softsynth.com
 */
 /*
- * $Id: pa_fuzz.c,v 1.1.1.1.2.9 2003/09/02 04:17:37 rossbencina Exp $
+ * $Id: pa_fuzz.c,v 1.1.1.1.2.10 2003/12/12 22:03:18 pieter Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.portaudio.com
@@ -142,7 +142,7 @@ int main(void)
               &outputParameters,
               SAMPLE_RATE,
               FRAMES_PER_BUFFER,
-              0, // paClipOff,     /* we won't output out of range samples so don't bother clipping them */
+              0, /* paClipOff, */  /* we won't output out of range samples so don't bother clipping them */
               fuzzCallback,
               NULL );
     if( err != paNoError ) goto error;

@@ -1,5 +1,5 @@
 /*
- * $Id: pa_cpuload.c,v 1.1.2.12 2003/09/15 18:30:26 rossbencina Exp $
+ * $Id: pa_cpuload.c,v 1.1.2.14 2004/01/08 22:01:12 rossbencina Exp $
  * Portable Audio I/O Library CPU Load measurement functions
  * Portable CPU load measurement facility.
  *
@@ -31,7 +31,7 @@
  */
 
 /** @file
- Functions to assist in measuring the CPU utilization of a callback
+ @brief Functions to assist in measuring the CPU utilization of a callback
  stream. Used to implement the Pa_GetStreamCpuLoad() function.
 
  @todo Dynamically calculate the coefficients used to smooth the CPU Load
@@ -56,6 +56,10 @@ void PaUtil_InitializeCpuLoadMeasurer( PaUtilCpuLoadMeasurer* measurer, double s
     measurer->averageLoad = 0.;
 }
 
+void PaUtil_ResetCpuLoadMeasurer( PaUtilCpuLoadMeasurer* measurer )
+{
+    measurer->averageLoad = 0.;
+}
 
 void PaUtil_BeginCpuLoadMeasurement( PaUtilCpuLoadMeasurer* measurer )
 {
