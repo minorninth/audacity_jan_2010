@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: simple example decoder
- last mod: $Id: decoder_example.c,v 1.20 2001/05/27 20:33:18 xiphmont Exp $
+ last mod: $Id: decoder_example.c,v 1.24 2001/12/19 23:13:32 segher Exp $
 
  ********************************************************************/
 
@@ -38,7 +38,7 @@
 ogg_int16_t convbuffer[4096]; /* take 8k out of the data segment, not the stack */
 int convsize=4096;
 
-int main(int argc, char **argv){
+int main(){
   ogg_sync_state   oy; /* sync and verify incoming physical bitstream */
   ogg_stream_state os; /* take physical pages, weld into a logical
 			  stream of packets */
@@ -62,9 +62,12 @@ int main(int argc, char **argv){
 #endif
 
 #if defined(macintosh) && defined(__MWERKS__)
-
-  argc = ccommand(&argv); /* get a "command line" from the Mac user */
-                          /* this also lets the user set stdin and stdout */
+  {
+    int argc;
+    char **argv;
+    argc=ccommand(&argv); /* get a "command line" from the Mac user */
+                     /* this also lets the user set stdin and stdout */
+  }
 #endif
 
   /********** Decode setup ************/
@@ -300,4 +303,3 @@ int main(int argc, char **argv){
   fprintf(stderr,"Done.\n");
   return(0);
 }
-

@@ -7,18 +7,20 @@
  *                                                                  *
  * THE OggVorbis SOURCE CODE IS (C) COPYRIGHT 1994-2001             *
  * by the XIPHOPHORUS Company http://www.xiph.org/                  *
-
+ *                                                                  *
  ********************************************************************
 
  function: registry for time, floor, res backends and channel mappings
- last mod: $Id: registry.c,v 1.9 2001/08/13 01:36:57 xiphmont Exp $
+ last mod: $Id: registry.c,v 1.13 2001/12/20 01:00:29 segher Exp $
 
  ********************************************************************/
 
 #include "vorbis/codec.h"
 #include "codec_internal.h"
 #include "registry.h"
+#include "registry-api.h"
 #include "misc.h"
+
 
 /* seems like major overkill now; the backend numbers will grow into
    the infrastructure soon enough */
@@ -49,4 +51,10 @@ vorbis_func_residue   *_residue_P[]={
 vorbis_func_mapping   *_mapping_P[]={
   &mapping0_exportbundle,
 };
+
+/* make Windows happy; can't access the registry directly outside of
+   libvorbis, and vorbisenc needs a few functions */
+void residue_free_info(vorbis_info_residue *r,int type){
+  _residue_P[type]->free_info(r);
+}
 
