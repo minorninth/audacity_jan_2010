@@ -21,10 +21,6 @@
  * $Id: acconfig.h,v 1.2 2001/10/21 22:26:32 dmazzoni Exp $
  */
 
-#ifdef _WIN32
-#include "configwin32.h"
-#endif
-
 # ifndef LIBMAD_CONFIG_H
 # define LIBMAD_CONFIG_H
 
