@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: psychoacoustics not including preecho
- last mod: $Id: psy.c,v 1.50 2001/08/13 01:36:57 xiphmont Exp $
+ last mod: $Id: psy.c,v 1.1.1.1 2001/08/14 19:04:27 habes Exp $
 
  ********************************************************************/
 
@@ -859,13 +859,13 @@ void _vp_compute_mask(vorbis_look_psy *p,
   if(p->vi->noisemaskp){
     float *work=alloca(n*sizeof(float));
 
-    bark_noise_pointmp(n,p->bark,logmdct,logmask,
+    bark_noise_pointmp(n,(const long *)p->bark,logmdct,logmask,
 		       -1);
 
     for(i=0;i<n;i++)work[i]=logmdct[i]-logmask[i];
 
     _analysis_output("medianmdct",seq,work,n,1,0);
-    bark_noise_hybridmp(n,p->bark,work,logmask,
+    bark_noise_hybridmp(n,(const long *)p->bark,work,logmask,
 			p->vi->noisewindowfixed);
 
     for(i=0;i<n;i++)work[i]=logmdct[i]-work[i];
