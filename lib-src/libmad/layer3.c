@@ -16,11 +16,15 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * $Id: layer3.c,v 1.36 2001/11/08 23:28:02 rob Exp $
+ * $Id: layer3.c,v 1.1.1.3 2002/01/14 08:05:31 dmazzoni Exp $
  */
 
 # ifdef HAVE_CONFIG_H
-#  include "config.h"
+#  ifdef WIN32
+#   include "configwin32.h"
+#  else
+#   include "config.h"
+#  endif
 # endif
 
 # include "global.h"
