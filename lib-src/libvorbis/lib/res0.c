@@ -332,7 +332,7 @@ static int local_book_besterror(codebook *book,float *a){
 	  best=i;
 	}
       }
-      e++;
+      e+=dim;
     }
   }
 

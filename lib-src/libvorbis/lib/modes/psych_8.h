@@ -97,6 +97,6 @@ static int _psy_ath_floater_8[3]={
 };
 
 static int _psy_ath_abs_8[3]={
-  -110,-110,-140,
+  -130,-130,-140,
 };
 

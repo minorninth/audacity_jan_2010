@@ -33,8 +33,12 @@
 #    define STIN static __inline__
 #  elif _WIN32
 #    define STIN static __inline
-#else
-#  define STIN static
+#  else
+#    define STIN static
+#  endif
+
+#ifdef DJGPP
+#  define rint(x)   (floor((x)+0.5f))
 #endif
 
 #ifndef M_PI

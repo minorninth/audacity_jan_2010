@@ -472,8 +472,8 @@ static noise3 _psy_noisebias_padding[12]={
 
 
 static noiseguard _psy_noiseguards_44[4]={
-  {4,4,15},
-  {4,4,15},
+  {3,3,15},
+  {3,3,15},
   {10,10,100},
   {10,10,100},
 };
