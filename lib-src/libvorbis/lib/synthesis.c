@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: single-block PCM synthesis
- last mod: $Id: synthesis.c,v 1.28 2002/07/11 06:40:50 xiphmont Exp $
+ last mod: $Id: synthesis.c,v 1.1.1.3 2002/10/26 19:39:30 dmazzoni Exp $
 
  ********************************************************************/
 

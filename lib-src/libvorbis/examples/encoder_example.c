@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: simple example encoder
- last mod: $Id: encoder_example.c,v 1.50 2002/07/16 09:26:07 xiphmont Exp $
+ last mod: $Id: encoder_example.c,v 1.1.1.3 2002/10/26 19:40:06 dmazzoni Exp $
 
  ********************************************************************/
 

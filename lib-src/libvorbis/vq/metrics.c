@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: function calls to collect codebook metrics
- last mod: $Id: metrics.c,v 1.15 2001/12/20 01:00:39 segher Exp $
+ last mod: $Id: metrics.c,v 1.1.1.2 2002/04/21 23:36:53 habes Exp $
 
  ********************************************************************/
 

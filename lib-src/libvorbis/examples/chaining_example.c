@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: illustrate simple use of chained bitstream and vorbisfile.a
- last mod: $Id: chaining_example.c,v 1.17 2002/07/11 06:40:47 xiphmont Exp $
+ last mod: $Id: chaining_example.c,v 1.1.1.3 2002/10/26 19:40:06 dmazzoni Exp $
 
  ********************************************************************/
 

@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: utility main for building codebooks from training sets
- last mod: $Id: build.c,v 1.21 2001/12/20 01:00:39 segher Exp $
+ last mod: $Id: build.c,v 1.1.1.2 2002/04/21 23:36:53 habes Exp $
 
  ********************************************************************/
 

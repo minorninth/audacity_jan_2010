@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: prototypes for extermal metrics specific to data type
- last mod: $Id: vqext.h,v 1.14 2001/12/20 01:00:40 segher Exp $
+ last mod: $Id: vqext.h,v 1.1.1.2 2002/04/21 23:36:53 habes Exp $
 
  ********************************************************************/
 

@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: generic euclidian distance metric for VQ codebooks
- last mod: $Id: genericdata.c,v 1.11 2001/12/20 01:00:39 segher Exp $
+ last mod: $Id: genericdata.c,v 1.1.1.2 2002/04/21 23:36:53 habes Exp $
 
  ********************************************************************/
 

@@ -11,7 +11,7 @@
  ********************************************************************
 
  function: libvorbis codec headers
- last mod: $Id: codec_internal.h,v 1.15 2002/06/28 22:19:35 xiphmont Exp $
+ last mod: $Id: codec_internal.h,v 1.1.1.3 2002/10/26 19:39:36 dmazzoni Exp $
 
  ********************************************************************/
 
