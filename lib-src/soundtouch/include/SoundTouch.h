@@ -30,10 +30,10 @@
  * Author        : Copyright (c) Olli Parviainen
  * Author e-mail : oparviai @ iki.fi
  *
- * Last changed  : $Date: 2003/12/27 11:54:16 $
- * File revision : $Revision: 1.7 $
+ * Last changed  : $Date: 2004/10/24 11:09:24 $
+ * File revision : $Revision: 1.9 $
  *
- * $Id: SoundTouch.h,v 1.7 2003/12/27 11:54:16 Olli Exp $
+ * $Id: SoundTouch.h,v 1.9 2004/10/24 11:09:24 Olli Exp $
  *
  * License :
  *
@@ -62,11 +62,14 @@
 #include "FIFOSamplePipe.h"
 #include "STTypes.h"
 
+namespace soundtouch
+{
+
 /// Soundtouch library version string
-#define SOUNDTOUCH_VERSION          "1.2.1"
+#define SOUNDTOUCH_VERSION          "1.2.2"
 
 /// SoundTouch library version id
-#define SOUNDTOUCH_VERSION_ID       010201
+#define SOUNDTOUCH_VERSION_ID       010202
 
 //
 // Available setting IDs for the 'setSetting' & 'get_setting' functions:
@@ -220,4 +223,5 @@ public:
 
 };
 
+}
 #endif

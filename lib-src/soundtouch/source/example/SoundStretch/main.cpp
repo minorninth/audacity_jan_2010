@@ -6,10 +6,10 @@
  * Author e-mail : oparviai @ iki.fi
  * File created  : 13-Jan-2002
  *
- * Last changed  : $Date: 2003/12/27 11:59:22 $
- * File revision : $Revision: 1.16 $
+ * Last changed  : $Date: 2004/10/20 14:45:40 $
+ * File revision : $Revision: 1.17 $
  *
- * $Id: main.cpp,v 1.16 2003/12/27 11:59:22 Olli Exp $
+ * $Id: main.cpp,v 1.17 2004/10/20 14:45:40 Olli Exp $
  *
  * License :
  *
@@ -48,7 +48,7 @@ using namespace std;
 
 static const char _helloText[] = 
     "\n"
-    "   SoundStretch v%s -  Written by Olli Parviainen 2001 - 2003\n"
+    "   SoundStretch v%s -  Written by Olli Parviainen 2001 - 2004\n"
     "==================================================================\n"
     "author e-mail: <oparviai@iki.fi> - WWW: http://www.iki.fi/oparviai/soundtouch\n"
     "\n"

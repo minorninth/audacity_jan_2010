@@ -31,10 +31,10 @@
  * Author e-mail : oparviai @ iki.fi
  * File created  : 13-Jan-2002
  *
- * Last changed  : $Date: 2003/12/27 10:00:30 $
- * File revision : $Revision: 1.8 $
+ * Last changed  : $Date: 2004/10/17 17:34:34 $
+ * File revision : $Revision: 1.9 $
  *
- * $Id: SoundTouch.cpp,v 1.8 2003/12/27 10:00:30 Olli Exp $
+ * $Id: SoundTouch.cpp,v 1.9 2004/10/17 17:34:34 Olli Exp $
  *
  * License :
  * 
@@ -83,7 +83,7 @@ SoundTouch::SoundTouch()
 {
     // Initialize rate transposer and tempo changer instances
 
-    pRateTransposer = new RateTransposer;
+    pRateTransposer = RateTransposer::newInstance();
     pTDStretch = TDStretch::newInstance();
 
     setOutPipe(pTDStretch);
