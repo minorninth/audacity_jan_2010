@@ -4,7 +4,7 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-/*$Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/private.h,v 1.6 1996/07/02 10:15:26 jutta Exp $*/
+/*$Header: /cvsroot/audacity/lib-src/libsndfile/src/GSM610/private.h,v 1.1.1.1 2001/10/15 04:39:21 dmazzoni Exp $*/
 
 #ifndef	PRIVATE_H
 #define	PRIVATE_H
