@@ -18,8 +18,12 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * $Id: acconfig.h,v 1.2 2001/10/21 22:26:32 dmazzoni Exp $
+ * $Id: config.h,v 1.8 2002/02/04 00:15:46 mbrubeck Exp $
  */
+
+#ifdef _WIN32
+#include "configwin32.h"
+#endif
 
 # ifndef LIBMAD_CONFIG_H
 # define LIBMAD_CONFIG_H
