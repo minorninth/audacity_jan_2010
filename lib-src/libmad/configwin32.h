@@ -16,7 +16,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- * $Id: config.h.in,v 1.1.1.1 2001/08/12 21:22:12 habes Exp $
+ * $Id: configwin32.h,v 1.1 2001/08/12 22:18:57 habes Exp $
  */
 
 # ifndef LIBMAD_CONFIG_H
@@ -45,7 +45,7 @@
 #undef OPT_SPEED
 
 /* Define to optimize for accuracy over speed. */
-#undef OPT_ACCURACY
+#define OPT_ACCURACY
 
 /* Define to enable a fast subband synthesis approximation optimization. */
 #undef OPT_SSO
@@ -90,7 +90,8 @@
 /* Version number of package */
 #define VERSION "0.13.0b"
 
-#define FPM_DEFAULT 1
+/* #define FPM_DEFAULT 1 */
+#define FPM_INTEL 1
 
 /*****************************************************************************
  * End of automatically configured definitions                               *
