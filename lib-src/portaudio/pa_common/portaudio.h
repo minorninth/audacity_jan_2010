@@ -7,7 +7,7 @@ extern "C"
 #endif /* __cplusplus */
 
 /*
- * $Id: portaudio.h,v 1.3 2002/01/24 22:42:56 rossb Exp $
+ * $Id: portaudio.h,v 1.5 2002/03/26 18:04:22 philburk Exp $
  * PortAudio Portable Real-Time Audio Library
  * PortAudio API Header File
  * Latest version available at: http://www.audiomulch.com/portaudio/
@@ -131,7 +131,7 @@ typedef unsigned long PaSampleFormat;
 typedef int PaDeviceID;
 #define paNoDevice -1
 
-int Pa_CountDevices();
+int Pa_CountDevices( void );
 
 typedef struct
 {
@@ -397,7 +397,7 @@ PaError Pa_AbortStream( PortAudioStream *stream );
 PaError Pa_StreamActive( PortAudioStream *stream );
 
 /*
- Pa_StreamTime() returns the current output time in samples for the stream .
+ Pa_StreamTime() returns the current output time in samples for the stream.
  This time may be used as a time reference (for example synchronizing audio to
  MIDI).
  
