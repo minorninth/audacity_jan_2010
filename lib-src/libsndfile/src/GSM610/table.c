@@ -4,8 +4,6 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-/* $Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/table.c,v 1.1 1992/10/28 00:15:50 jutta Exp $ */
-
 /*  Most of these tables are inlined at their point of use.
  */
 
@@ -16,7 +14,7 @@
  */
 
 #define	GSM_TABLE_C
-#include "private.h"
+#include "gsm610_priv.h"
 #include	"gsm.h"
 
 /*  Table 4.1  Quantization of the Log.-Area Ratios

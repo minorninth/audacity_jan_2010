@@ -4,14 +4,11 @@
  * details.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
  */
 
-/* $Header: /tmp_amd/presto/export/kbs/jutta/src/gsm/RCS/gsm_option.c,v 1.3 1996/07/02 09:59:05 jutta Exp $ */
-
-#include "private.h"
+#include "gsm610_priv.h"
 
 #include "gsm.h"
-#include "proto.h"
 
-int gsm_option P3((r, opt, val), gsm r, int opt, int * val)
+int gsm_option (gsm r, int opt, int * val)
 {
 	int 	result = -1;
 
