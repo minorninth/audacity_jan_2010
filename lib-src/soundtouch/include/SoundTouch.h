@@ -30,10 +30,10 @@
  * Author        : Copyright (c) Olli Parviainen
  * Author e-mail : oparviai @ iki.fi
  *
- * Last changed  : $Date: 2004/10/24 11:09:24 $
- * File revision : $Revision: 1.9 $
+ * Last changed  : $Date: 2004/10/26 19:09:39 $
+ * File revision : $Revision: 1.2 $
  *
- * $Id: SoundTouch.h,v 1.9 2004/10/24 11:09:24 Olli Exp $
+ * $Id: SoundTouch.h,v 1.2 2004/10/26 19:09:39 vjohnson Exp $
  *
  * License :
  *
@@ -146,7 +146,7 @@ public:
     static const char *getVersionString();
 
     /// Get SoundTouch library version Id
-    static uint SoundTouch::getVersionId();
+    static uint getVersionId();
 
     /// Sets new rate control value. Normal rate = 1.0, smaller values
     /// represent slower rate, larger faster rates.
