@@ -9,10 +9,10 @@
  * Author e-mail : oparviai @ iki.fi
  * File created  : 13-Jan-2002
  *
- * Last changed  : $Date: 2003/12/27 10:00:52 $
- * File revision : $Revision: 1.13 $
+ * Last changed  : $Date: 2004/03/14 15:51:43 $
+ * File revision : $Revision: 1.1.1.1 $
  *
- * $Id: FIRFilter.cpp,v 1.13 2003/12/27 10:00:52 Olli Exp $
+ * $Id: FIRFilter.cpp,v 1.1.1.1 2004/03/14 15:51:43 mbrubeck Exp $
  *
  * License :
  * 
@@ -173,7 +173,7 @@ void FIRFilter::setCoefficients(const SAMPLETYPE *coeffs, uint newLength, uint u
     assert(length == newLength);
 
     resultDivFactor = uResultDivFactor;
-    resultDivider = (uint)pow(2, resultDivFactor);
+    resultDivider = (uint)pow(2.0, (int)resultDivFactor);
 
     delete[] filterCoeffs;
     filterCoeffs = new SAMPLETYPE[length];
