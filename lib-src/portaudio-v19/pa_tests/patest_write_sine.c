@@ -4,7 +4,7 @@
     @author Phil Burk <philburk@softsynth.com>
 */
 /*
- * $Id: patest_write_sine.c,v 1.1.1.1 2004/04/22 04:08:26 mbrubeck Exp $
+ * $Id: patest_write_sine.c,v 1.1.2.3 2004/03/15 13:24:25 rossbencina Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.portaudio.com/

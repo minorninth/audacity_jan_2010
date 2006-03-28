@@ -4,7 +4,7 @@
 	@author Phil Burk <philburk@softsynth.com>
 */
 /*
- * $Id: patest_maxsines.c,v 1.1.1.1 2004/04/22 04:08:25 mbrubeck Exp $
+ * $Id: patest_maxsines.c,v 1.4.2.3 2003/12/18 01:34:32 pieter Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.audiomulch.com/portaudio/

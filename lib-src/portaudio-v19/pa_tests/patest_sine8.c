@@ -3,7 +3,7 @@
 	@author Ross Bencina <rossb@audiomulch.com>
 */
 /*
- * $Id: patest_sine8.c,v 1.1.1.1 2004/04/22 04:08:25 mbrubeck Exp $
+ * $Id: patest_sine8.c,v 1.1.1.1.2.3 2003/12/29 08:46:37 rossbencina Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.audiomulch.com/portaudio/

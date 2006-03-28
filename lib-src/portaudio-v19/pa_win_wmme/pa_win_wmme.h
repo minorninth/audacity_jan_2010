@@ -1,7 +1,7 @@
 #ifndef PA_WIN_WMME_H
 #define PA_WIN_WMME_H
 /*
- * $Id: pa_win_wmme.h,v 1.1.1.1 2004/04/22 04:08:29 mbrubeck Exp $
+ * $Id: pa_win_wmme.h,v 1.1.2.14 2004/02/20 14:16:53 rossbencina Exp $
  * PortAudio Portable Real-Time Audio Library
  * MME specific extensions
  *

@@ -3,7 +3,7 @@
 	@author Phil Burk  http://www.softsynth.com
 */
 /*
- * $Id: pa_fuzz.c,v 1.1.1.1 2004/04/22 04:08:24 mbrubeck Exp $
+ * $Id: pa_fuzz.c,v 1.1.1.1.2.10 2003/12/12 22:03:18 pieter Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.portaudio.com

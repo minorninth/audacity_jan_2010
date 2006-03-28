@@ -5,7 +5,7 @@
     @author Ross Bencina rossb@audiomulch.com
 */
 /*
- * $Id: patest_read_record.c,v 1.1.1.1 2004/04/22 04:08:26 mbrubeck Exp $
+ * $Id: patest_read_record.c,v 1.1.2.4 2004/02/13 07:48:10 rossbencina Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.portaudio.com

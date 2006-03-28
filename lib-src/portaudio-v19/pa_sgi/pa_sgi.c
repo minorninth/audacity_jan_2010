@@ -1,5 +1,5 @@
 /*
- * $Id: pa_sgi.c,v 1.1.1.1 2004/04/22 04:08:23 mbrubeck Exp $
+ * $Id: pa_sgi.c,v 1.2.2.20 2004/01/03 19:20:09 pieter Exp $
  * PortAudio Portable Real-Time Audio Library. 
  * Latest Version at: http://www.portaudio.com.
  * Silicon Graphics (SGI) IRIX implementation by Pieter Suurmond.

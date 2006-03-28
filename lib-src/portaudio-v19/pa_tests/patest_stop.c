@@ -13,7 +13,7 @@
 	@author Phil Burk <philburk@softsynth.com>
 */
 /*
- * $Id: patest_stop.c,v 1.1.1.1 2004/04/22 04:08:25 mbrubeck Exp $
+ * $Id: patest_stop.c,v 1.1.1.1.2.7 2003/12/29 08:19:53 rossbencina Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.portaudio.com

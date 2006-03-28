@@ -3,7 +3,7 @@
 	@author Ross Bencina <rossb@audiomulch.com>
 */
 /*
- * $Id: patest_callbackstop.c,v 1.1.1.1 2004/04/22 04:08:25 mbrubeck Exp $
+ * $Id: patest_callbackstop.c,v 1.1.2.5 2003/12/29 08:44:42 rossbencina Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.portaudio.com/

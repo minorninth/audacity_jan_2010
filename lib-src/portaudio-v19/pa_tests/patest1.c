@@ -3,7 +3,7 @@
 	@author Ross Bencina <rossb@audiomulch.com>
 */
 /*
- * $Id: patest1.c,v 1.1.1.1 2004/04/22 04:08:24 mbrubeck Exp $
+ * $Id: patest1.c,v 1.1.1.1.2.6 2003/12/31 00:05:08 pieter Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.portaudio.com

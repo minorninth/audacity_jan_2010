@@ -3,7 +3,7 @@
 	@author Phil Burk
 */
 /*
- * $Id: patest_sine_formats.c,v 1.1.1.1 2004/04/22 04:08:25 mbrubeck Exp $
+ * $Id: patest_sine_formats.c,v 1.2.2.4 2003/12/29 08:41:55 rossbencina Exp $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.audiomulch.com/portaudio/

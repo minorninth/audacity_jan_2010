@@ -1,5 +1,5 @@
 /*
- * $Id: debug_record.c,v 1.1.1.1 2004/04/22 04:08:24 mbrubeck Exp $
+ * $Id: debug_record.c,v 1.3 2002/05/02 20:15:40 philburk Exp $
  * debug_record.c
  * Record input into an array.
  * Save array to a file.
