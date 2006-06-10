@@ -1,5 +1,5 @@
 /*
- * $Id: pablio.c,v 1.1.1.1 2002/01/22 00:52:53 phil Exp $
+ * $Id: pablio.c 90 2002-01-22 00:51:49Z phil $
  * pablio.c
  * Portable Audio Blocking Input/Output utility.
  *

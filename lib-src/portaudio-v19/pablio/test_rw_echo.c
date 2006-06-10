@@ -1,5 +1,5 @@
 /*
- * $Id: test_rw_echo.c,v 1.1.1.1 2002/01/22 00:52:54 phil Exp $
+ * $Id: test_rw_echo.c 90 2002-01-22 00:51:49Z phil $
  * test_rw_echo.c
  * Echo delayed input to output.
  *
