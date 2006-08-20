@@ -1,5 +1,5 @@
 /*
- * $Id: pa_mac_core_old.c 946 2005-12-24 01:22:52Z bjornroche $
+ * $Id$
  * pa_mac_core.c
  * Implementation of PortAudio for Mac OS X CoreAudio       
  *                                                                                         
