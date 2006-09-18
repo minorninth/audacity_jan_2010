@@ -2,8 +2,8 @@
 ///
 /// Win32 version of the x86 CPU detect routine.
 ///
-/// This file is to be compiled in Windows platform with Microsoft Visual C++ 
-/// Compiler. Please see 'cpu_detect_x86_gcc.cpp' for the gcc compiler version 
+/// This file is to be compiled in Windows platform with Microsoft Visual C++
+/// Compiler. Please see 'cpu_detect_x86_gcc.cpp' for the gcc compiler version
 /// for all GNU platforms.
 ///
 /// Author        : Copyright (c) Olli Parviainen
@@ -12,10 +12,10 @@
 ///
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Last changed  : $Date: 2006/04/08 14:14:10 $
-// File revision : $Revision: 1.1.1.1.2.3 $
+// Last changed  : $Date: 2006/09/18 07:31:42 $
+// File revision : $Revision: 1.3 $
 //
-// $Id: cpu_detect_x86_win.cpp,v 1.1.1.1.2.3 2006/04/08 14:14:10 richardash1981 Exp $
+// $Id: cpu_detect_x86_win.cpp,v 1.3 2006/09/18 07:31:42 richardash1981 Exp $
 //
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -71,7 +71,7 @@ uint detectCPUextensions(void)
 
     if (_dwDisabledISA == 0xffffffff) return 0;
 
-    _asm 
+    _asm
     {
         ; check if 'cpuid' instructions is available by toggling eflags bit 21
         ;
@@ -89,7 +89,7 @@ uint detectCPUextensions(void)
         cmp     eax, ecx            ; compare to original eflags values
         jz      end                 ; jumps to 'end' if cpuid not present
 
-        ; cpuid instruction available, test for presence of mmx instructions 
+        ; cpuid instruction available, test for presence of mmx instructions
         mov     eax, 1
         cpuid
         test    edx, 0x00800000
