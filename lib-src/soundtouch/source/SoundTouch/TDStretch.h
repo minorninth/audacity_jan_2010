@@ -1,41 +1,45 @@
-/*****************************************************************************
- * 
- * Sampled sound tempo changer/time stretch algorithm. Changes the sound tempo 
- * while maintaining the original pitch by using a time domain WSOLA-like method 
- * with several performance-increasing tweaks.
- *
- * Note : MMX optimized functions reside in a separate, platform-specific file, 
- * e.g. 'mmx_win.cpp' or 'mmx_gcc.cpp'
- *
- * Author        : Copyright (c) Olli Parviainen
- * Author e-mail : oparviai @ iki.fi
- * File created  : 13-Jan-2002
- *
- * Last changed  : $Date: 2004/10/24 11:09:24 $
- * File revision : $Revision: 1.14 $
- *
- * $Id: TDStretch.h,v 1.14 2004/10/24 11:09:24 Olli Exp $
- *
- * License :
- * 
- *  SoundTouch sound processing library
- *  Copyright (c) Olli Parviainen
- *
- *  This library is free software; you can redistribute it and/or
- *  modify it under the terms of the GNU Lesser General Public
- *  License as published by the Free Software Foundation; either
- *  version 2.1 of the License, or (at your option) any later version.
- *
- *  This library is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- *  Lesser General Public License for more details.
- *
- *  You should have received a copy of the GNU Lesser General Public
- *  License along with this library; if not, write to the Free Software
- *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *
- *****************************************************************************/
+////////////////////////////////////////////////////////////////////////////////
+/// 
+/// Sampled sound tempo changer/time stretch algorithm. Changes the sound tempo 
+/// while maintaining the original pitch by using a time domain WSOLA-like method 
+/// with several performance-increasing tweaks.
+///
+/// Note : MMX optimized functions reside in a separate, platform-specific file, 
+/// e.g. 'mmx_win.cpp' or 'mmx_gcc.cpp'
+///
+/// Author        : Copyright (c) Olli Parviainen
+/// Author e-mail : oparviai 'at' iki.fi
+/// SoundTouch WWW: http://www.surina.net/soundtouch
+///
+////////////////////////////////////////////////////////////////////////////////
+//
+// Last changed  : $Date: 2006/04/08 14:14:10 $
+// File revision : $Revision: 1.2.2.3 $
+//
+// $Id: TDStretch.h,v 1.2.2.3 2006/04/08 14:14:10 richardash1981 Exp $
+//
+////////////////////////////////////////////////////////////////////////////////
+//
+// License :
+//
+//  SoundTouch audio processing library
+//  Copyright (c) Olli Parviainen
+//
+//  This library is free software; you can redistribute it and/or
+//  modify it under the terms of the GNU Lesser General Public
+//  License as published by the Free Software Foundation; either
+//  version 2.1 of the License, or (at your option) any later version.
+//
+//  This library is distributed in the hope that it will be useful,
+//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+//  Lesser General Public License for more details.
+//
+//  You should have received a copy of the GNU Lesser General Public
+//  License along with this library; if not, write to the Free Software
+//  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+//
+////////////////////////////////////////////////////////////////////////////////
 
 #ifndef TDStretch_H
 #define TDStretch_H

@@ -1,6 +1,6 @@
 ## Process this file with automake to create Makefile.in
 ##
-## $Id: Makefile.am,v 1.2 2003/12/27 11:59:36 Olli Exp $
+## $Id: Makefile.am,v 1.1.1.1.2.3 2006/04/08 14:14:10 richardash1981 Exp $
 ##
 ## Copyright (C) 2003 - David W. Durham
 ## 
@@ -22,5 +22,5 @@
 ## I used config/am_include.mk for common definitions
 include $(top_srcdir)/config/am_include.mk
 
-pkginclude_HEADERS=FIFOSampleBuffer.h FIFOSamplePipe.h SoundTouch.h STTypes.h BPMDetect.h
+pkginclude_HEADERS=FIFOSampleBuffer.h FIFOSamplePipe.h SoundTouch.h STTypes.h BPMDetect.h soundtouch_config.h
 
