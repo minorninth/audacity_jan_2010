@@ -1,5 +1,5 @@
 /*
- * $Id: pa_front.c 975 2006-03-20 18:11:09Z aknudsen $
+ * $Id: pa_front.c 1097 2006-08-26 08:27:53Z rossb $
  * Portable Audio I/O Library Multi-Host API front end
  * Validate function parameters and manage multiple host APIs.
  *
@@ -17,10 +17,6 @@
  * The above copyright notice and this permission notice shall be
  * included in all copies or substantial portions of the Software.
  *
- * Any person wishing to distribute modifications to the Software is
- * requested to send the modifications to the original developer so that
- * they can be incorporated into the canonical version.
- *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
@@ -30,34 +26,20 @@
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-/* doxygen index page */
-/** @mainpage
-
-PortAudio is an open-source cross-platform ‘C’ library for audio input
-and output. It is designed to simplify the porting of audio applications
-between various platforms, and also to simplify the development of audio
-software in general by hiding the complexities of device interfacing.
-
-See the PortAudio website for further information http://www.portaudio.com/
-
-This documentation pertains to PortAudio V19, API version 2.0 which is
-currently under development. API version 2.0 differs in a number of ways from
-previous versions, please consult the enhancement proposals for further details:
-http://www.portaudio.com/docs/proposals/index.html
-
-This documentation is under construction. Things you might be interested in
-include:
-
-- The PortAudio API 2.0, as documented in portaudio.h
-
-- The <a href="todo.html">TODO List</a>
-
-Feel free to pick an item off TODO list and fix/implement it. You may want to
-enquire about status on the PortAudio mailing list first.
-*/
-
+/*
+ * The text above constitutes the entire PortAudio license; however, 
+ * the PortAudio community also makes the following non-binding requests:
+ *
+ * Any person wishing to distribute modifications to the Software is
+ * requested to send the modifications to the original developer so that
+ * they can be incorporated into the canonical version. It is also 
+ * requested that these non-binding requests be included along with the 
+ * license above.
+ */
 
 /** @file
+ @ingroup common_src
+
  @brief Implements public PortAudio API, checks some errors, forwards to
  host API implementations.
  
