@@ -1,5 +1,5 @@
 /*
- * $Id: pa_jack.c 1103 2006-08-29 20:56:04Z aknudsen $
+ * $Id: pa_jack.c,v 1.2 2006/09/23 18:42:50 llucius Exp $
  * PortAudio Portable Real-Time Audio Library
  * Latest Version at: http://www.portaudio.com
  * JACK Implementation by Joshua Haberman
@@ -466,12 +466,12 @@ static PaError BuildDeviceList( PaJackHostApiRepresentation *jackApi )
 
     const char **jack_ports = NULL;
     char **client_names = NULL;
-    char *regex_pattern = MALLOC( jack_client_name_size() + 3 );
+    char *regex_pattern = NULL;
     int port_index, client_index, i;
     double globalSampleRate;
     regex_t port_regex;
     unsigned long numClients = 0, numPorts = 0;
-    char *tmp_client_name = MALLOC( jack_client_name_size() );
+    char *tmp_client_name = NULL;
 
     commonApi->info.defaultInputDevice = paNoDevice;
     commonApi->info.defaultOutputDevice = paNoDevice;
@@ -483,6 +483,9 @@ static PaError BuildDeviceList( PaJackHostApiRepresentation *jackApi )
     /* since we are rebuilding the list of devices, free all memory
      * associated with the previous list */
     PaUtil_FreeAllAllocations( jackApi->deviceInfoMemory );
+
+    regex_pattern = MALLOC( jack_client_name_size() + 3 );
+    tmp_client_name = MALLOC( jack_client_name_size() );
 
     /* We can only retrieve the list of clients indirectly, by first
      * asking for a list of all ports, then parsing the port names
