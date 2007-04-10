@@ -2,11 +2,14 @@
 // Name:        filedlgg.cpp
 // Purpose:     wxGenericFileDialog
 // Author:      Robert Roebling
-// Modified by:
+// Modified by: Leland Lucius
 // Created:     12/12/98
-// RCS-ID:      $Id: filedlgg.cpp,v 1.143.2.2 2006/03/06 10:44:48 JS Exp $
+// RCS-ID:      $Id: FileDialog.hpp,v 1.1 2007/04/06 10:16:52 llucius Exp $
 // Copyright:   (c) Robert Roebling
 // Licence:     wxWindows licence
+//
+// Modified for Audacity to support an additional button on Save dialogs
+//
 /////////////////////////////////////////////////////////////////////////////
 
 // For compilers that support precompilation, includes "wx.h".

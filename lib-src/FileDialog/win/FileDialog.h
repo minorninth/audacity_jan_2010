@@ -2,11 +2,14 @@
 // Name:        wx/msw/filedlg.h
 // Purpose:     wxFileDialog class
 // Author:      Julian Smart
-// Modified by:
+// Modified by: Leland Lucius
 // Created:     01/02/97
-// RCS-ID:      $Id: filedlg.h,v 1.21 2004/09/29 08:03:21 ABX Exp $
+// RCS-ID:      $Id: FileDialog.h,v 1.1 2007/04/06 10:16:53 llucius Exp $
 // Copyright:   (c) Julian Smart
 // Licence:     wxWindows licence
+//
+// Modified for Audacity to support an additional button on Save dialogs
+//
 /////////////////////////////////////////////////////////////////////////////
 
 #ifndef _FILEDIALOGMSW_H_

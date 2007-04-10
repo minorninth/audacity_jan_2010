@@ -2,9 +2,12 @@
 // Name:        filedlg.h
 // Purpose:
 // Author:      Robert Roebling
-// Id:          $Id: filedlg.h,v 1.28 2005/08/02 22:57:55 MW Exp $
+// Id:          $Id: FileDialog.h,v 1.1 2007/04/06 10:16:52 llucius Exp $
 // Copyright:   (c) 1998 Robert Roebling
 // Licence:     wxWindows licence
+//
+// Modified for Audacity to support an additional button on Save dialogs
+//
 /////////////////////////////////////////////////////////////////////////////
 
 

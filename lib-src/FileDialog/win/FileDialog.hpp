@@ -2,11 +2,14 @@
 // Name:        src/msw/filedlg.cpp
 // Purpose:     wxFileDialog
 // Author:      Julian Smart
-// Modified by:
+// Modified by: Leland Lucius
 // Created:     01/02/97
-// RCS-ID:      $Id: filedlg.cpp,v 1.77.2.2 2006/02/13 03:25:37 KH Exp $
+// RCS-ID:      $Id: FileDialog.hpp,v 1.1 2007/04/06 10:16:53 llucius Exp $
 // Copyright:   (c) Julian Smart
 // Licence:     wxWindows licence
+//
+// Modified for Audacity to support an additional button on Save dialogs
+//
 /////////////////////////////////////////////////////////////////////////////
 
 // ============================================================================

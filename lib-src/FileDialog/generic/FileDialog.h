@@ -2,11 +2,14 @@
 // Name:        filedlgg.h
 // Purpose:     wxGenericFileDialog
 // Author:      Robert Roebling
-// Modified by:
+// Modified by: Leland Lucius
 // Created:     8/17/99
 // Copyright:   (c) Robert Roebling
-// RCS-ID:      $Id: filedlgg.h,v 1.39 2005/03/08 00:29:56 VZ Exp $
+// RCS-ID:      $Id: FileDialog.h,v 1.1 2007/04/06 10:16:52 llucius Exp $
 // Licence:     wxWindows licence
+//
+// Modified for Audacity to support an additional button on Save dialogs
+//
 /////////////////////////////////////////////////////////////////////////////
 
 #ifndef _FILEDIALOGGENERICH_
