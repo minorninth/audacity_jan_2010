@@ -4,7 +4,7 @@
 // Author:      Stefan Csomor
 // Modified by: Leland Lucius
 // Created:     1998-01-01
-// RCS-ID:      $Id: FileDialog.hpp,v 1.3 2007/04/12 00:15:37 llucius Exp $
+// RCS-ID:      $Id: FileDialog.hpp,v 1.4 2007/04/21 19:37:41 llucius Exp $
 // Copyright:   (c) Stefan Csomor
 // Licence:     wxWindows licence
 //
@@ -21,6 +21,8 @@
 #include "wx/intl.h"
 #include "wx/tokenzr.h"
 #include "wx/filename.h"
+
+#include "../FileDialog.h"
 
 #ifndef __DARWIN__
 #include "PLStringFuncs.h"
