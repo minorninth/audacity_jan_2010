@@ -4,7 +4,7 @@
 	@author Ross Bencina <rossb@audiomulch.com>
 */
 /*
- * $Id: patest_callbackstop.c 1097 2006-08-26 08:27:53Z rossb $
+ * $Id: patest_callbackstop.c 1162 2006-12-18 20:40:35Z bjornroche $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.portaudio.com/
@@ -211,6 +211,9 @@ int main(void)
 
         err = Pa_StopStream( stream );
         if( err != paNoError ) goto error;
+
+        printf( "sleeping for 1 second...\n" );
+        Pa_Sleep( 1000 );
     }
 
     err = Pa_CloseStream( stream );

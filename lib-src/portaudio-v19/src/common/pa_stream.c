@@ -1,5 +1,5 @@
 /*
- * $Id: pa_stream.c,v 1.2 2006/09/23 18:42:47 llucius Exp $
+ * $Id: pa_stream.c 1097 2006-08-26 08:27:53Z rossb $
  * Portable Audio I/O Library
  * 
  *
