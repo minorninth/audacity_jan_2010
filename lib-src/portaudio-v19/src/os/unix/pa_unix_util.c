@@ -1,5 +1,5 @@
 /*
- * $Id: pa_unix_util.c 1182 2007-03-16 19:48:30Z aknudsen $
+ * $Id: pa_unix_util.c,v 1.5 2007/06/03 08:30:32 llucius Exp $
  * Portable Audio I/O Library
  * UNIX platform-specific support functions
  *
@@ -404,7 +404,12 @@ PaError PaUnixThread_Terminate( PaUnixThread* self, int wait, PaError* exitResul
     PA_DEBUG(( "%s: Joining thread %d\n", __FUNCTION__, self->thread ));
     PA_ENSURE_SYSTEM( pthread_join( self->thread, &pret ), 0 );
 
+#ifdef PTHREAD_CANCELED
     if( pret && PTHREAD_CANCELED != pret )
+#else
+    /* !wait means the thread may have been canceled */
+    if( pret && wait )
+#endif
     {
         if( exitResult )
         {
