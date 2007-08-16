@@ -1,5 +1,5 @@
 /*
- * $Id: pa_unix_oss.c,v 1.5 2007/08/15 19:55:50 richardash1981 Exp $
+ * $Id: pa_unix_oss.c 1238 2007-07-15 16:58:50Z aknudsen $
  * PortAudio Portable Real-Time Audio Library
  * Latest Version at: http://www.portaudio.com
  * OSS implementation by:
