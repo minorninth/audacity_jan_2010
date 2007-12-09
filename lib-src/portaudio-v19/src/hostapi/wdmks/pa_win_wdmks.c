@@ -1,5 +1,5 @@
 /*
- * $Id: pa_win_wdmks.c 1229 2007-06-15 16:11:11Z rossb $
+ * $Id: pa_win_wdmks.c 1263 2007-08-27 22:59:09Z rossb $
  * PortAudio Windows WDM-KS interface
  *
  * Author: Andrew Baldwin
@@ -1559,6 +1559,11 @@ static PaError FilterCanCreateCapturePin(PaWinWdmFilter* filter,
 
 /**
  * Build the list of available filters
+ * Use the SetupDi API to enumerate all devices in the KSCATEGORY_AUDIO which 
+ * have a KSCATEGORY_RENDER or KSCATEGORY_CAPTURE alias. For each of these 
+ * devices initialise a PaWinWdmFilter structure by calling our NewFilter() 
+ * function. We enumerate devices twice, once to count how many there are, 
+ * and once to initialize the PaWinWdmFilter structures.
  */
 static PaError BuildFilterList(PaWinWdmHostApiRepresentation* wdmHostApi)
 {

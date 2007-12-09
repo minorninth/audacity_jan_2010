@@ -1,5 +1,5 @@
 /*
- * $Id: pa_linux_alsa.c 1250 2007-08-12 21:05:23Z aknudsen $
+ * $Id: pa_linux_alsa.c 1278 2007-09-12 17:39:48Z aknudsen $
  * PortAudio Portable Real-Time Audio Library
  * Latest Version at: http://www.portaudio.com
  * ALSA implementation by Joshua Haberman and Arve Knudsen
@@ -2159,7 +2159,9 @@ error:
 static PaError AlsaStop( PaAlsaStream *stream, int abort )
 {
     PaError result = paNoError;
-    /* XXX: Seems that draining the dmix device may trigger a race condition in ALSA */
+    /* XXX: snd_pcm_drain tends to lock up, avoid it until we find out more */
+    abort = 1;
+    /*
     if( stream->capture.pcm && !strcmp( Pa_GetDeviceInfo( stream->capture.device )->name,
                 "dmix" ) )
     {
@@ -2170,6 +2172,7 @@ static PaError AlsaStop( PaAlsaStream *stream, int abort )
     {
         abort = 1;
     }
+    */
 
     if( abort )
     {
