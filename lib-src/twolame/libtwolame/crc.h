@@ -17,7 +17,9 @@
  *  You should have received a copy of the GNU Lesser General Public
  *  License along with this library; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
- *  
+ *
+ *  $Id: crc.h 156 2007-03-20 23:57:35Z nhumfrey $
+ *
  */
 
 #ifndef	_CRC_H_
@@ -27,3 +29,5 @@ void crc_writeheader( unsigned char *bitstream, int bit_count );
 
 #endif
 
+
+// vim:ts=4:sw=4:nowrap: 
