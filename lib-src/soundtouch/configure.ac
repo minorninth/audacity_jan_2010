@@ -1,6 +1,6 @@
 dnl SoundTouch configure.ac, by David W. Durham
 dnl
-dnl $Id: configure.ac,v 1.5 2006/10/04 23:00:56 llucius Exp $
+dnl $Id: configure.ac,v 1.6 2007/06/13 02:51:36 llucius Exp $
 dnl
 dnl This file is part of SoundTouch, an audio processing library for pitch/time adjustments
 dnl 
@@ -37,7 +37,12 @@ dnl added by audacity as this is a bundled library
 dnl ############################################################################
 dnl # Checks for programs                                                      #
 dnl ############################################################################
-CXXFLAGS= dnl AC_PROG_CXX automatically sets CXXFLAGS to -g -O2 if g++ is the C++ compiler and CXXFLAGS hasn't been set, so by setting CXXFLAGS, we can avoid this.
+
+dnl dmazzoni: Sorry, SoundTouch authors/packagers, but trying to override
+dnl CXXFLAGS ruins cross-compilation.  Commenting this out.
+dnl CXXFLAGS= dnl AC_PROG_CXX automatically sets CXXFLAGS to -g -O2 if g++ is the C++ compiler and CXXFLAGS hasn't been set, so by setting CXXFLAGS, we can avoid this.
+
+
 AC_PROG_CXX
 #AC_PROG_AWK
 AC_PROG_CC
