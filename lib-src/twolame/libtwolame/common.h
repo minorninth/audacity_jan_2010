@@ -18,7 +18,7 @@
  *	License along with this library; if not, write to the Free Software
  *	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  $Id: common.h,v 1.2 2008/01/06 14:21:15 richardash1981 Exp $
+ *  $Id: common.h 163 2008-01-08 01:41:52Z nhumfrey $
  *
  */
 
@@ -45,7 +45,7 @@
 #elif (__APPLE_CC__ >= 5465)
 #define NO_DLL_INLINE extern inline
 # else
-#  define NO_DLL_INLINE inline
+#  define NO_DLL_INLINE extern inline
 # endif
 #endif
 

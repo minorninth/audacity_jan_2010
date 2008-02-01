@@ -18,7 +18,7 @@
  *	License along with this library; if not, write to the Free Software
  *	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
  *
- *  $Id: twolame.h 156 2007-03-20 23:57:35Z nhumfrey $
+ *  $Id: twolame.h 164 2008-01-08 01:43:36Z nhumfrey $
  *
  */
 
@@ -101,7 +101,7 @@ typedef enum {
 
 
 /** Number of samples per frame of Layer 2 MPEG Audio */
-#define TWOLAME_SAMPLES_PER_FRAME		1152
+#define TWOLAME_SAMPLES_PER_FRAME		(1152)
 
 
 /** Opaque structure for the twolame encoder options. */
