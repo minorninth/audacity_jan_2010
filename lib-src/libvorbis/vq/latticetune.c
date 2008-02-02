@@ -6,13 +6,13 @@
  * IN 'COPYING'. PLEASE READ THESE TERMS BEFORE DISTRIBUTING.       *
  *                                                                  *
  * THE OggVorbis SOURCE CODE IS (C) COPYRIGHT 1994-2001             *
- * by the XIPHOPHORUS Company http://www.xiph.org/                  *
+ * by the Xiph.Org Foundation http://www.xiph.org/                  *
  *                                                                  *
  ********************************************************************
 
  function: utility main for setting entropy encoding parameters
            for lattice codebooks
- last mod: $Id: latticetune.c,v 1.1.1.3 2004/11/13 16:54:31 mbrubeck Exp $
+ last mod: $Id: latticetune.c 13293 2007-07-24 00:09:47Z xiphmont $
 
  ********************************************************************/
 
