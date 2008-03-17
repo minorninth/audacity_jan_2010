@@ -14,10 +14,10 @@
 ///
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Last changed  : $Date: 2006/09/18 07:31:41 $
-// File revision : $Revision: 1.3 $
+// Last changed  : $Date: 2006/09/18 22:29:22 $
+// File revision : $Revision: 1.4 $
 //
-// $Id: RateTransposer.h,v 1.3 2006/09/18 07:31:41 richardash1981 Exp $
+// $Id: RateTransposer.h,v 1.4 2006/09/18 22:29:22 martynshaw Exp $
 //
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -134,7 +134,7 @@ public:
     AAFilter *getAAFilter() const;
 
     /// Enables/disables the anti-alias filter. Zero to disable, nonzero to enable
-    void enableAAFilter(BOOL newMode);
+    void enableAAFilter(const BOOL newMode);
 
     /// Returns nonzero if anti-alias filter is enabled.
     BOOL isAAFilterEnabled() const;
@@ -144,7 +144,7 @@ public:
     virtual void setRate(float newRate);
 
     /// Sets the number of channels, 1 = mono, 2 = stereo
-    void setChannels(uint channels);
+    void setChannels(const uint channels);
 
     /// Adds 'numSamples' pcs of samples from the 'samples' memory position into
     /// the input of the object.
