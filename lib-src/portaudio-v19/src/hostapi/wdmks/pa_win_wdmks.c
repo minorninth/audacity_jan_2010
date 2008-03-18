@@ -1,5 +1,5 @@
 /*
- * $Id: pa_win_wdmks.c 1263 2007-08-27 22:59:09Z rossb $
+ * $Id: pa_win_wdmks.c 1339 2008-02-15 07:50:33Z rossb $
  * PortAudio Windows WDM-KS interface
  *
  * Author: Andrew Baldwin
@@ -38,7 +38,7 @@
  */
 
 /** @file
- @ingroup hostaip_src
+ @ingroup hostapi_src
  @brief Portaudio WDM-KS host API.
 
  @note This is the implementation of the Portaudio host API using the

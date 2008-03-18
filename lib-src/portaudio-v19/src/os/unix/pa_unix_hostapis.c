@@ -1,5 +1,5 @@
 /*
- * $Id: pa_unix_hostapis.c 1097 2006-08-26 08:27:53Z rossb $
+ * $Id: pa_unix_hostapis.c 1353 2008-02-21 20:34:00Z jpgrayson $
  * Portable Audio I/O Library UNIX initialization table
  *
  * Based on the Open Source API proposed by Ross Bencina
@@ -49,6 +49,8 @@ PaError PaOSS_Initialize( PaUtilHostApiRepresentation **hostApi, PaHostApiIndex 
 PaError PaSGI_Initialize( PaUtilHostApiRepresentation **hostApi, PaHostApiIndex index );
 /* Linux AudioScience HPI */
 PaError PaAsiHpi_Initialize( PaUtilHostApiRepresentation **hostApi, PaHostApiIndex index );
+PaError PaMacCore_Initialize( PaUtilHostApiRepresentation **hostApi, PaHostApiIndex index );
+PaError PaSkeleton_Initialize( PaUtilHostApiRepresentation **hostApi, PaHostApiIndex index );
 
 
 PaUtilHostApiInitializer *paHostApiInitializers[] =
@@ -72,6 +74,15 @@ PaUtilHostApiInitializer *paHostApiInitializers[] =
 #ifdef PA_USE_ASIHPI
         PaAsiHpi_Initialize,
 #endif
+
+#ifdef PA_USE_COREAUDIO
+        PaMacCore_Initialize,
+#endif
+
+#ifdef PA_USE_SKELETON
+        PaSkeleton_Initialize,
+#endif
+
         0   /* NULL terminated array */
     };
 

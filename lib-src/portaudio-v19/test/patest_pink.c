@@ -17,7 +17,7 @@
 	@author Phil Burk  http://www.softsynth.com
 */
 /*
- * $Id: patest_pink.c 1097 2006-08-26 08:27:53Z rossb $
+ * $Id: patest_pink.c 1368 2008-03-01 00:38:27Z rossb $
  *
  * This program uses the PortAudio Portable Audio Library.
  * For more information see: http://www.portaudio.com
@@ -236,6 +236,10 @@ int main(void)
 
     /* Open a stereo PortAudio stream so we can hear the result. */
     outputParameters.device = Pa_GetDefaultOutputDevice(); /* Take the default output device. */
+    if (outputParameters.device == paNoDevice) {
+      fprintf(stderr,"Error: No default output device.\n");
+      goto error;
+    }
     outputParameters.channelCount = 2;                     /* Stereo output, most likely supported. */
     outputParameters.hostApiSpecificStreamInfo = NULL;
     outputParameters.sampleFormat = paFloat32;             /* 32 bit floating point output. */

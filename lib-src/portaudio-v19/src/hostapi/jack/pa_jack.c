@@ -1,5 +1,5 @@
 /*
- * $Id: pa_jack.c 1306 2007-11-27 19:33:53Z aknudsen $
+ * $Id: pa_jack.c 1346 2008-02-20 10:09:20Z rossb $
  * PortAudio Portable Real-Time Audio Library
  * Latest Version at: http://www.portaudio.com
  * JACK Implementation by Joshua Haberman
@@ -254,7 +254,7 @@ static PaError BlockingInitFIFO( PaUtilRingBuffer *rbuf, long numFrames, long by
     char *buffer = (char *) malloc( numBytes );
     if( buffer == NULL ) return paInsufficientMemory;
     memset( buffer, 0, numBytes );
-    return (PaError) PaUtil_InitializeRingBuffer( rbuf, numBytes, buffer );
+    return (PaError) PaUtil_InitializeRingBuffer( rbuf, 1, numBytes, buffer );
 }
 
 /* Free buffer. */
