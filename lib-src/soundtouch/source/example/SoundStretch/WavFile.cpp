@@ -17,10 +17,10 @@
 ///
 ////////////////////////////////////////////////////////////////////////////////
 //
-// Last changed  : $Date: 2006/04/08 14:14:10 $
-// File revision : $Revision: 1.2.2.3 $
+// Last changed  : $Date: 2006/09/18 07:31:48 $
+// File revision : $Revision: 1.3 $
 //
-// $Id: WavFile.cpp,v 1.2.2.3 2006/04/08 14:14:10 richardash1981 Exp $
+// $Id: WavFile.cpp,v 1.3 2006/09/18 07:31:48 richardash1981 Exp $
 //
 ////////////////////////////////////////////////////////////////////////////////
 //
@@ -48,6 +48,7 @@
 #include <stdio.h>
 #include <stdexcept>
 #include <string>
+#include <cstring>
 #include <assert.h>
 #include <limits.h>
 
