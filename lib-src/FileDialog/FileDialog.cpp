@@ -37,7 +37,7 @@ void FileDialog::ClickButton(int index)
 // Author:      John Labenski
 // Modified by: Leland Lucius
 // Created:     14.06.03 (extracted from src/*/filedlg.cpp)
-// RCS-ID:      $Id: FileDialog.cpp,v 1.6 2007/06/18 16:10:50 jamescrook Exp $
+// RCS-ID:      $Id: FileDialog.cpp,v 1.7 2008/05/24 02:57:39 llucius Exp $
 // Copyright:   (c) Robert Roebling
 // Licence:     wxWindows licence
 //
@@ -88,7 +88,7 @@ wxString FileSelector(const wxChar *title,
                          flags);
 
    // Enable the extra button if desired
-   if ((flags & wxSAVE) && (cb != NULL))
+   if ((flags & wxFD_SAVE) && (cb != NULL))
    {
       fileDialog.EnableButton(label, cb, cbdata);
    }
