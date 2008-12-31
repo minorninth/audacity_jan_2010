@@ -2,7 +2,7 @@
 #define PA_UNIX_OSS_H
 
 /*
- * $Id: portaudio.patch,v 1.7 2008/01/09 05:16:19 llucius Exp $
+ * $Id: portaudio.patch,v 1.8 2008/03/18 12:35:51 richardash1981 Exp $
  * PortAudio Portable Real-Time Audio Library
  * OSS-specific extensions
  *
@@ -54,7 +54,7 @@ const char *PaOSS_GetStreamOutputDevice( PaStream *s );
 #define PA_UNIX_OSS_H
 
 /*
- * $Id: portaudio.patch,v 1.7 2008/01/09 05:16:19 llucius Exp $
+ * $Id: portaudio.patch,v 1.8 2008/03/18 12:35:51 richardash1981 Exp $
  * PortAudio Portable Real-Time Audio Library
  * OSS-specific extensions
  *
