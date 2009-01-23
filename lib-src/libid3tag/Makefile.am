@@ -16,10 +16,13 @@
 ## along with this program; if not, write to the Free Software
 ## Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 ##
-## $Id: Makefile.am,v 1.26 2004/02/17 02:11:28 rob Exp $
+## $Id: Makefile.am,v 1.3 2004/06/08 06:38:14 dmazzoni Exp $
 ##
 
 ## Process this file with automake to produce Makefile.in
+
+# tell aclocal that extra macros can be found in m4/
+ACLOCAL_AMFLAGS = -I m4
 
 SUBDIRS =		
 DIST_SUBDIRS =		msvc++
