@@ -1,5 +1,5 @@
 /*
- * $Id: pa_win_util.c 1339 2008-02-15 07:50:33Z rossb $
+ * $Id: pa_win_util.c,v 1.8 2008/12/31 15:38:36 richardash1981 Exp $
  * Portable Audio I/O Library
  * Win32 platform-specific support functions
  *
@@ -50,6 +50,10 @@
 #include <mmsystem.h> /* for timeGetTime() */
 
 #include "pa_util.h"
+
+#if (defined(WIN32) && (defined(_MSC_VER) && (_MSC_VER >= 1200))) /* MSC version 6 and above */
+#pragma comment( lib, "winmm.lib" )
+#endif
 
 
 /*
